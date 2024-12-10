@@ -2,7 +2,7 @@ public class helloworld {
   public static void main (String[] args){
     System.out.println("hello world!");
    //让我们说中文
-   //20241211 课程内容
+   //20241210 课程内容
 
    // ! 1, Data type (primitive)
    //int -> integer(整数)
@@ -15,6 +15,10 @@ public class helloworld {
    //关于命名 variable java naming conversion
    //caml case(驼峰命名)
    //example: day0fweek,y2
+
+   //x cannot be declared twice
+
+   int x100;
 
    x = 101;//re-assign 101 to x
    x = x + 10;//from right to left
@@ -87,5 +91,45 @@ public class helloworld {
    long l2 = 2^63-1;
    //long l3 = 11111111111111111111L;
    long l3 = 1111111111111111111L;//->"L"declare its a long valve
+
+    //bMax = bMax + 1;//(not safe for java)
+   b2 = (byte) (b2 + 1);//(not safe for java)(force to do)
+   System.out.println(b2);
+
+   int output = b1 + 100;//(safe for java)
+   System.out.println(output);
+
+   //1.compile time & 2.run time
+   //1.1.java.file(.java)->class file(.class):java code->byte code(close to machine code)
+   //1.1.1.compile fail. for example(missing: syntax error)
+   //1.1.2.compile success -> class file
+   //1.2 java virtual machine(JVM):class file -> machine code 
+   //float,double
+   double d1 = 10.2;// ->double value 
+   double d2 = 10.2d;// ->double value
+   float f1 = 10.2222222f;// ->float value
+
+   float f2 = 20.2f;
+   double d3 = f2;//safe for java
+   //float f5 = d3;//not safe for java
+
+   double d4 = 10.2f;//upcasting
+   
+   //char
+   char c = 'x';
+   char c1 = '1';
+   char cSpace = ' ';//[space]
+
+   //boolean
+   boolean bo1 = true;
+   boolean bo2 = false;
+
+   int age = 66;
+   boolean isElderly = age > 65;//"age > 65"=asking if age > 65
+   System.out.println(isElderly);
+
+   int age2 = 18;
+   boolean isChild = age2 < 18;
+   System.out.println(isChild);
   }
 }
