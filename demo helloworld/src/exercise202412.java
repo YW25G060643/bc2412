@@ -8,5 +8,12 @@ public class exercise202412 {
     double y = pricef0rorange * quantity0forange;
     double totalamount = x + y;
     System.out.println(totalamount);
+
+    int engScore = 73;
+    int mathScore = 60;
+    int histScore = 61;
+    int x2 = engScore * mathScore * histScore;
+    double averScore = x / 3;
+    System.out.println(averScore);
   }
 }
