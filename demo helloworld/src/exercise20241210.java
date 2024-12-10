@@ -1,4 +1,4 @@
-public class exercise202412 {
+public class exercise20241210 {
   public static void main (String[] args){
     //exercise 20241212
     double pricef0rapple = 7.3;

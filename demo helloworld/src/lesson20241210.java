@@ -1,4 +1,4 @@
-public class helloworld {
+public class lesson20241210 {
   public static void main (String[] args){
     System.out.println("hello world!");
    //让我们说中文
