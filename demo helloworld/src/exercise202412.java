@@ -16,5 +16,27 @@ public class exercise202412 {
     int totalScore = engScore + mathScore + histScore;
     double averScore = totalScore / 3;
     System.out.println(averScore);
+
+    byte bMax = 127;
+    short sMax = 32767;
+    int iMax = 2_100_000_000;
+    long lmax = 2^63-1;
+    byte bMin = -128;
+    short sMin = -32768;
+    int iMin = -2_100_000_000;
+    long lMin = -2^63;
+
+    //bMax = bMax + 1;//(not safe for java)
+    bMax = (byte) (bMax + 1);//(not safe for java)(force to do)
+    System.out.println(bMax);
+
+    int output = bMin + 100;//(safe for java)
+    System.out.println(output);
+
+    //1.compile time & 2.run time
+    //1.1.java.file(.java)->class file(.class):java code->byte code(close to machine code)
+    //1.1.1.compile fail. for example(missing: syntax error)
+    //1.1.2.compile success -> class file
+    //1.2 java virtual machine(JVM):class file -> machine code 
   }
 }

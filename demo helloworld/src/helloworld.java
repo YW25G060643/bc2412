@@ -1,5 +1,6 @@
 public class helloworld {
   public static void main (String[] args){
+    System.out.println("hello world!");
    //让我们说中文
    //20241211 课程内容
 
@@ -8,6 +9,8 @@ public class helloworld {
    int x = 3;
    int nana = 7;
    double y2 = 3.2;
+   double z = nana /  y2;
+   System.out.println(z);
 
    //关于命名 variable java naming conversion
    //caml case(驼峰命名)
@@ -66,5 +69,23 @@ public class helloworld {
    //1,2,3 as x3
    //4 assign double to int (downcasting)
    //!not allow
+
+   //! store integer. java: int,byte,short,long
+   int value1 = 1000000000;
+   int value2 = 1_000_000;
+   int maxInteger = 2_147_483_647;
+   int minInteger = -2_147_483_648;
+   //byte->int value
+   byte b1 = -128;
+   byte b2 = 127;
+   //short->int value
+   short s1 = -32768;
+   short s2 = 32767;
+   //long->int value
+   //2,147,483,648->int
+   long l1 = -2^63L;
+   long l2 = 2^63-1;
+   //long l3 = 11111111111111111111L;
+   long l3 = 1111111111111111111L;//->"L"declare its a long valve
   }
 }
