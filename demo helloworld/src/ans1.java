@@ -1,4 +1,4 @@
-public class ans {
+public class ans1 {
   public static void main(String[] args) {
     int x1 = 31;
     int x2 = 42;
@@ -20,13 +20,10 @@ public class ans {
     double d1 = -20.5;
     System.out.println("the variable fnumber is " + f1);
     System.out.println("the variable dnumber is " + d1);
-    double r1 = 7;
-    double r2 = 3;
-    int r3 = 7;
-    int r4 = 3;
-    int div1 = r3 / r4;
-    double div2 = r1 / r2;
-    System.out.println(div2 - div1);
+    int a = 7;
+    int b = 3;
+    int c = a % b;
+    System.out.println("The variable reminder is " + c);
     int x6 = 50;
     int ans4 = x1 + x2 - x3 - x6;
     System.out.println("the variable result is " + ans4);
