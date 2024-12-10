@@ -9,8 +9,9 @@ public class ans1 {
     int x3 = 20;
     int ans2 = x1 - x3;
     System.out.println(ans2);
-    int x4 = 110;
-    int ans3 = x4 + x3;
+    byte b1 = 60;
+    byte b2 = 70;
+    int ans3 = b1 + b2;
     System.out.println(ans3);
     boolean varB = false;
     boolean varC = true;
@@ -20,7 +21,7 @@ public class ans1 {
     double d1 = -20.5;
     System.out.println("the variable fnumber is " + f1);
     System.out.println("the variable dnumber is " + d1);
-    int a = 7;
+    int a = 28;
     int b = 3;
     int c = a % b;
     System.out.println("The variable reminder is " + c);
