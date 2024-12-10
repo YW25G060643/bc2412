@@ -12,8 +12,8 @@ public class exercise202412 {
     int engScore = 73;
     int mathScore = 60;
     int histScore = 61;
-    int x2 = engScore * mathScore * histScore;
-    double averScore = x / 3;
+    int totalScore = engScore + mathScore + histScore;
+    double averScore = totalScore / 3;
     System.out.println(averScore);
   }
 }
