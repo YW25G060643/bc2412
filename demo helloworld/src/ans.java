@@ -1,0 +1,34 @@
+public class ans {
+  public static void main(String[] args) {
+    int x1 = 31;
+    int x2 = 42;
+    System.out.println(x1);
+    System.out.println(x2);
+    int ans1 = x1 + x2;
+    System.out.println(ans1);
+    int x3 = 20;
+    int ans2 = x1 - x3;
+    System.out.println(ans2);
+    int x4 = 110;
+    int ans3 = x4 + x3;
+    System.out.println(ans3);
+    boolean varB = false;
+    boolean varC = true;
+    System.out.println("the variable varB is " + varB);
+    System.out.println("the variable varC is " + varC);
+    float f1 = -130.2f;
+    double d1 = -20.5;
+    System.out.println("the variable fnumber is " + f1);
+    System.out.println("the variable dnumber is " + d1);
+    double r1 = 7;
+    double r2 = 3;
+    int r3 = 7;
+    int r4 = 3;
+    int div1 = r3 / r4;
+    double div2 = r1 / r2;
+    System.out.println(div2 - div1);
+    int x6 = 50;
+    int ans4 = x1 + x2 - x3 - x6;
+    System.out.println("the variable result is " + ans4);
+  }
+}
