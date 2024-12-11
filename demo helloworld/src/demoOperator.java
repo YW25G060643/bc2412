@@ -1,4 +1,4 @@
-public class demo_operator {
+public class demoOperator {
   public static void main(String[] args){
     //+1
     int x = 3;
@@ -52,5 +52,14 @@ public class demo_operator {
     //1.q+3
     //2.q=9
     //3.result2=11
+
+    //string +=
+    String s = "hello";
+    s += "!";
+    System.out.println(s);
+    //string + anything = string
+    s += 'a';
+    s += 1000000000;
+    System.out.println(s);
   }
 }

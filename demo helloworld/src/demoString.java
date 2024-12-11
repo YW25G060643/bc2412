@@ -1,4 +1,4 @@
-public class demo_string {
+public class demoString {
   public static void main(String[] args) {
     char x = 'a';
     x = 1;
