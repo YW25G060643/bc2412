@@ -37,11 +37,41 @@ public class demoConditional {
     }
 
     //check if y > 3 and an even number
-    if (y > 3){
+    if (y > 3 && y %2 ==0){
       System.out.println("y > 3");
-    }
-    if (y % 2 == 0) {
       System.out.println("y is an even number");
     }
+
+    char k = 'k';
+    if (k == 'k') {
+      System.out.println("k = k");
+    }
+   int age = 18;
+   boolean isAdult = age >= 18;
+   if (isAdult == false) {
+    System.out.println("child");
+   }
+   if (isAdult == true) {
+    System.out.println("adult");
+   }
+
+   int score = 90;
+   char gender = 'm';
+   String grade = "";
+   //>=90 grade A ,between 89&80 grade B ,between 79&70 grade C <70 fail
+   //>=90 grade A ,between 89&85 for female grade B+ ,between 89&87 for male grade B+ between 80&84 grade B.
+   //between 79&70 grade C <70 fail
+   if (score >= 90) {
+    grade = "A";
+   }else if (score <= 89 && score >= 85 && gender == 'f' || score <= 89 && score >= 87 && gender == 'm') {
+    grade = "B+";
+   }else if (score >= 80) {
+    grade = "B";
+   }else if (score <= 79 && score >= 70) {
+    grade = "C";
+   }else if (score < 70) {
+    grade = "Fail";
+   }
+   System.out.println("grade " + grade);
   }
 }
