@@ -55,8 +55,8 @@ public class demoConditional {
     System.out.println("adult");
    }
 
-   int score = 90;
-   char gender = 'm';
+   int score = 69;
+   char gender = 'f';
    String grade = "";
    //>=90 grade A ,between 89&80 grade B ,between 79&70 grade C <70 fail
    //>=90 grade A ,between 89&85 for female grade B+ ,between 89&87 for male grade B+ between 80&84 grade B.
@@ -73,5 +73,16 @@ public class demoConditional {
     grade = "Fail";
    }
    System.out.println("grade " + grade);
+   //test cases
+   //1.m.90->A
+   //2.f.90->A
+   //3.m.87->B+
+   //4.f.85->B+
+   //5.m.86->B
+   //6.f.84->B
+   //7.m.79->C
+   //8.f.79->C
+   //9.m.69->Fail
+   //10.f.69->Fail
   }
 }
