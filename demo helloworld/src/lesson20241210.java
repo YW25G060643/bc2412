@@ -131,5 +131,8 @@ public class lesson20241210 {
    int age2 = 18;
    boolean isChild = age2 < 18;
    System.out.println(isChild);
+
+   int remainder = 10 % 3;
+   System.out.println(remainder);
   }
 }
