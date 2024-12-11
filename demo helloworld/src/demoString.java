@@ -37,5 +37,21 @@ public class demoString {
     //length()
     int result4 = password.length();
     System.out.println(result4);
+
+    //print the last char of string
+    char lastChar = password.charAt(password.length() - 1);
+    System.out.println(lastChar);
+
+    //empty string
+    String emptyString = "";
+    System.out.println(emptyString.length());//0
+    boolean isStringEmpty = "".equals(emptyString);//asking if emptyString equals to ""
+    System.out.println(isStringEmpty);
+    
+    String s = "hello";
+    System.out.println("hello".equals(s));//asking if s equals to hello
+
+    System.out.println("hello".charAt(2));//l
+    System.out.println("hello".length());
   }
 }

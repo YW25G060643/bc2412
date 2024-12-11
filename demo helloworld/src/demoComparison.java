@@ -51,19 +51,5 @@ public class demoComparison {
     boolean result6 = age2 == 20 || gender =='m';
     System.out.println(result6);
 
-    int x10 = 5;
-    int y10 = 10;
-    int z10 = x10 += 3 * y10;
-    System.out.println(z10);//35
-    
-    int x = 3;
-    int y = (x++ + 3) * x++;
-    System.out.println(y);//= 24
-    System.out.println(x);//= 5
-    //1. 3 + 3
-    //2. x = 4
-    //3. 6 * 4
-    //4. assignment
-    //5. x becomes 4
   }
 }

@@ -61,5 +61,20 @@ public class demoOperator {
     s += 'a';
     s += 1000000000;
     System.out.println(s);
+    
+    int x10 = 5;
+    int y10 = 10;
+    int z10 = x10 += 3 * y10;
+    System.out.println(z10);//35
+    
+    int x2 = 3;
+    int y2 = (x2++ + 3) * x2++;
+    System.out.println(y2);//= 24
+    System.out.println(x2);//= 5
+    //1. 3 + 3
+    //2. x = 4
+    //3. 6 * 4
+    //4. assignment
+    //5. x becomes 4
   }
 }
