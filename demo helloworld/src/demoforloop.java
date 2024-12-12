@@ -1,4 +1,4 @@
-public class demoloop {
+public class demoforloop {
   public static void main(String[] args){
     //2^100
     int x = 2;
@@ -52,13 +52,57 @@ public class demoloop {
     //System.out.println(i); i is declared  within the loop
     
     //sum up all odd number between 0 - 10
-    int xii = 0;
+    //sum up all odd number between 0 - 10
+    //the difference between evenSum & oddSum -> positive number
+    int oddSum = 0;
+    int everSum = 0;
     for(int i = 0; i <= 10; i++){
       if(i % 2 != 0){
-        xii += i;
-        System.out.println(xii + " 7");
-      }else{
+        oddSum += i;
+      }
+      if (i % 2 == 0) {
+        everSum += i;
       }
     }
+    System.out.println(oddSum  + " 7");
+    System.out.println(everSum + " 7.5");
+    int diff = oddSum - everSum;
+    //int diff = oddSum > evenSum ? oddSum - evenSum : evenSum - oddSum;
+    if (diff < 0) {
+      diff *= -1;
+    }
+    System.out.println(diff + " 7.5.5");
+    //searching
+    String str = "abcdefghdjk";
+    //1. check if 'd' exists in the string.
+    boolean found = false;
+    for(int i = 0; i <= str.length(); i++){
+      if (str.charAt(i) == 'd'){
+        found = true;
+        System.out.println(found + " 8");
+        break;//break the nearest loop
+      }
+      //test cases
+      //1. "abcdefijk"
+      //2. "abcefijk"
+      //3. ""
+      //4. "abcdefijkd"
+
+    }
+    //2. check if the string value contains given sub-string
+    String substr = "loq";
+    String str1 = "hello";
+    //hel - loq
+    //ell - loq
+    //llo - loq
+    //lo? - loq
+    boolean isSubExist = false;
+    for(int i = 0; i < str1.length() - substr.length() - 1; i++){
+      if (str1.substring(i, i + substr.length()).equals(substr)) {
+        isSubExist = true;
+        break;
+      }
+    }
+    System.out.println(isSubExist + " 9");
   }
 }

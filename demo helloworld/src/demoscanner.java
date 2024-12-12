@@ -14,8 +14,21 @@ public class demoscanner {
     //String str = scanner.nextLine();
     //System.out.println("string = " + str);
 
-    for(int i = 0; i < num ; i++){
-      System.out.println("hello");
+    //for(int i = 0; i < num ; i++){
+    //  System.out.println("hello");
+    //}
+
+    //num -> numbers of days
+    //for loop
+    int totalMinutes = 0;
+    int totalHours = 0;
+    for(int i = 0; i < num; i++){
+      totalHours +=24;
+      for(int j = 0; j < 24; j++){
+        totalMinutes += 60;
+      }
     }
+    System.out.println(totalMinutes);
+    System.out.println(totalHours);
   }
 }

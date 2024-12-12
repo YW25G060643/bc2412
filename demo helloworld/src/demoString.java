@@ -53,5 +53,27 @@ public class demoString {
 
     System.out.println("hello".charAt(2));//l
     System.out.println("hello".length());
+
+    //isEmpty()
+    String s5 = "abc";
+    //check if s5 is empty
+    boolean isEmpty = s5.length() == 0;
+    System.out.println(isEmpty);//false
+    System.out.println(s5.isEmpty());//false
+
+    //if (!s5.isEmpty) {
+      
+    //}
+
+    //substring
+    //string 
+    String subStr = s5.substring(0, 2);
+    //s5 doesnt change
+    //substr is storing a new string value by "substring"
+    System.out.println(s5);//abc
+    System.out.println(subStr);//ab
+    System.out.println(s5.substring(0, 3));//abc
+    System.out.println(s5.substring(0, s5.length()));//abc
+    System.out.println(s5.substring(1));//bc
   }
 }
