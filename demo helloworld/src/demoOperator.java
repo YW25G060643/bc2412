@@ -75,6 +75,6 @@ public class demoOperator {
     //2. x = 4
     //3. 6 * 4
     //4. assignment
-    //5. x becomes 4
+    //5. x2 becomes 4
   }
 }
