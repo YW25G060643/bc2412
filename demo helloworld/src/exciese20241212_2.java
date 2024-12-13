@@ -16,7 +16,7 @@ public class exciese20241212_2 {
     // The February has 29 days: (Every 4 years and the year cannot divded by
     // 100) or The year can divided by 400
     // otherwise the February should have 28 days only
-    if (month <= 0 || month > 12 || year < 1) {
+    if (month < 1 || month > 12 || year < 1) {
       System.out.println("R U Kidding me?");
     }else{
       if(month == 1|| month == 3|| month == 5|| month == 7|| month == 8|| month == 10|| month == 12){
@@ -30,7 +30,7 @@ public class exciese20241212_2 {
           number_Of_DaysInMonth = 28;
         }
       }
-      
+
       if (month == 1) {
         monthOfName = "Jan";
       }
@@ -67,6 +67,7 @@ public class exciese20241212_2 {
       if (month == 12) {
         monthOfName = "Dec";
       }
+
       System.out.println(monthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
     }
   }
