@@ -114,6 +114,17 @@ public class demoforloop {
       if (s.charAt(i) == 'l') {
         num += 1;
       }
-    }System.out.println("there`s " + num + " Ls");
+    }
+    System.out.println("there`s " + num + " Ls");
+
+    //continue -- skip the rest, go to next loop
+    num = 0;
+    for(int i = 0; i < s.length(); i++){
+      if (s.charAt(i) != 'l') {
+        continue;
+      }
+      num++;
+    }
+    System.out.println(num + " 10");
   }
 }
