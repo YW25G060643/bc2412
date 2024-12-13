@@ -7,7 +7,7 @@
     - math (++x; x++; %)
     - comparsion (==; !==; <; >; <=; >=) -> primitives
   - String (anything) 
-  - equal(String) length() charAt(int)
+  - equals(String) length() charAt(int)
   - if, else, else if
   - for(i = 0; i < 10; i++){
   - break
