@@ -126,5 +126,14 @@ public class demoforloop {
       num++;
     }
     System.out.println(num + " 10");
+    
+    //1 - 100, print all numbers which can divide by 3 and 4
+    //continue
+    for(int i = 1; i < 101; i++){
+      if (i % 3 != 0 || i % 4 != 0 ) {
+        continue;
+      }
+      System.out.println(i + " 11");
+    }
   }
 }
