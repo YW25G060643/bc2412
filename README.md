@@ -1,3 +1,4 @@
+# Notes
 ## week 1
 - Data types x 8:
   - int byte short long double float
