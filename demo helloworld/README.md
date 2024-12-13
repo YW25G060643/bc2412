@@ -3,6 +3,9 @@
 - Data types x 8:
   - int byte short long double float
   - boolean & char
+  - operator
+    - math (++x; x++; %)
+    - comparsion (==; !==; <; >; <=; >=) -> primitives
   - String (anything) 
   - equal(String) length() charAt(int)
   - if, else, else if
@@ -10,3 +13,4 @@
   - break
   - }
   - for + if(loop all elements + filtering)
+    - searching for + if
