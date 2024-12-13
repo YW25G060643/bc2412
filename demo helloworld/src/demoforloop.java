@@ -139,7 +139,8 @@ public class demoforloop {
     //nested loop
     for(int i = 0; i < 3; i++){
       for(int j = 0; j < 4; j++){
-        System.out.println("* 12");
+        System.out.println("* 12");//print at next line
+        //System.out.print("* 12");//print at one line
       }
       //-> i++
     }
@@ -155,5 +156,32 @@ public class demoforloop {
     //10. i = 2; j = 1; *
     //11. i = 2; j = 2; *
     //12. i = 2; j = 3; *
+
+    //* 
+    //**
+    //***
+    //****
+    for(int i = 0; i < 3; i++){
+      for(int j = 0; j < 4; j++){
+        if (i == 0 && j == 0) {
+          System.out.println('*');
+        }if (i == 0 && j == 1) {
+          System.out.print('*');
+        }if (i == 0 && j == 2) {
+          System.out.println('*');
+        }if (i == 0 && j == 3) {
+          System.out.print('*');
+          System.out.print('*');
+        }if (i == 1 && j == 0) {
+          System.out.println('*');
+        }if (i == 1 && j == 1) {
+          System.out.print('*');
+          System.out.print('*');
+          System.out.print('*');
+        }if (i == 1 && j == 2) {
+          System.out.println("* 13");
+        }
+      }
+    }
   }
 }
