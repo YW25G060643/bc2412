@@ -24,7 +24,7 @@ public class exciese20241212_2 {
       }else if (month != 2) {
         number_Of_DaysInMonth = 30;
       }else{
-        if ((year * 100) % 400 == 0 && (year * 100) % 100 != 0) {
+        if ((year % 400 == 0 || year % 4 == 0 ) && year % 100 != 0) {
           number_Of_DaysInMonth = 29;
         }else{
           number_Of_DaysInMonth = 28;
