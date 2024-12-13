@@ -104,5 +104,16 @@ public class demoforloop {
       }
     }
     System.out.println(isSubExist + " 9");
+
+    //couting
+    String s = "hello";
+    //count the number of 'l'
+    //for if
+    int num = 0;
+    for(int i = 0; i < s.length(); i++){
+      if (s.charAt(i) == 'l') {
+        num += 1;
+      }
+    }System.out.println("there`s " + num + " Ls");
   }
 }
