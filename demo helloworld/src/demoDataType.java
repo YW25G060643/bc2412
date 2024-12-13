@@ -1,4 +1,4 @@
-public class lesson20241210 {
+public class demoDataType {
   public static void main (String[] args){
     System.out.println("hello world!");
    //让我们说中文
@@ -134,5 +134,28 @@ public class lesson20241210 {
 
    int remainder = 10 % 3;
    System.out.println(remainder);
+
+   char q = 'a';
+   int u = q;//char can be assigned to int
+   System.out.println(u);//97
+   //char -> int
+
+   char q2 = 97;
+   System.out.println(q2);//a
+
+   //ASCII code (0-127)
+   //48 == 0; 65 == A; 97 == a
+
+   char q3 = 48;
+   System.out.println(q3);//0
+   int u3 = q3;
+   System.out.println(u3);//48
+
+   char q4 = '鈊';//int -> char: not safe
+   int u4 = q4;
+   System.out.println(q4 + " , " + u4);
+
+   //byte -> short -> int -> long -> float -> double
+   //char -> int -> long -> float -> double
   }
 }

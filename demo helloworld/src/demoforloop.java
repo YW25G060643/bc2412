@@ -135,5 +135,25 @@ public class demoforloop {
       }
       System.out.println(i + " 11");
     }
+
+    //nested loop
+    for(int i = 0; i < 3; i++){
+      for(int j = 0; j < 4; j++){
+        System.out.println("* 12");
+      }
+      //-> i++
+    }
+    //1. i = 0; j = 0; *
+    //2. i = 0; j = 1; *
+    //3. i = 0; j = 2; *
+    //4. i = 0; j = 3; *
+    //5. i = 1; j = 0; *
+    //6. i = 1; j = 1; *
+    //7. i = 1; j = 2; *
+    //8. i = 1; j = 3; *
+    //9. i = 2; j = 0; *
+    //10. i = 2; j = 1; *
+    //11. i = 2; j = 2; *
+    //12. i = 2; j = 3; *
   }
 }
