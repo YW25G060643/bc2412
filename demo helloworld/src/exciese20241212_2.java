@@ -19,10 +19,10 @@ public class exciese20241212_2 {
     if (month < 1 || month > 12 || year < 1) {
       System.out.println("R U Kidding me?");
     }else{
-      if(month == 1|| month == 3|| month == 5|| month == 7|| month == 8|| month == 10|| month == 12){
-        number_Of_DaysInMonth = 31;
-      }else if (month != 2) {
+      if(month == 4|| month == 6|| month == 9|| month == 11){
         number_Of_DaysInMonth = 30;
+      }else if (month != 2) {
+        number_Of_DaysInMonth = 31;
       }else{
         if ((year % 400 == 0 || year % 4 == 0 ) && year % 100 != 0) {
           number_Of_DaysInMonth = 29;
