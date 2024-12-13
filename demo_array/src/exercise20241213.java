@@ -46,17 +46,20 @@ public class exercise20241213 {
    * 0 1 1 2 3 5 8 13 21 ...
    * 
    */
-   int Seq = 0;
    int first = 0, second = 1;
    for(int i = 0; i < 15; i++){// for loop to print first 15 numbers in Fibonacci Sequence
-    if (i == 0) {
-      Seq = 0;
-    }else if(i > 0){
-      first = i--;
-      second = i;
-      Seq = first + second;
+    System.out.println(first);
+    int next = first + second;
+    first = second;
+    second = next;
     }
-    System.out.println(Seq);
-   }
+    
   }
 }
+// 0+1=1  0
+// 1+1=2  1
+// 2+1=3  2
+// 3+2=5  3
+// 5+3=8  4
+// 8+5=13  5
+// 13+8=22  6
