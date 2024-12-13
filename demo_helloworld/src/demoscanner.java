@@ -23,7 +23,7 @@ public class demoscanner {
     int totalMinutes = 0;
     int totalHours = 0;
     for(int i = 0; i < num; i++){
-      totalHours +=24;
+      totalHours += 24;
       for(int j = 0; j < 24; j++){
         totalMinutes += 60;
       }
