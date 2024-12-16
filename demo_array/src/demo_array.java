@@ -174,5 +174,21 @@ public class demo_array {
             chArr[i] += 1;//chArr[i] = (char) (chArr[i] + 1);
         }
         System.out.println(String.valueOf(chArr));
+
+        char[] arr10 = new char[]{'p', 'a', 'p', 'b', 'a', 'p'};
+        int[] arr11 = new int[6];
+        //loop > 1
+        char maxNumChar = ' ';
+        int maxNumInt = 0;
+        for(int i = 0; i < arr10.length; i++){
+            arr11[i] = arr10[i];
+        }
+        for(int i = 0; i < arr11.length; i++){
+            if (arr11[i] > maxNumInt) {
+                maxNumInt = arr11[i];
+            }
+        }
+        maxNumChar =(char) maxNumInt;
+        System.out.println(maxNumChar);//'p'
     }
 }
