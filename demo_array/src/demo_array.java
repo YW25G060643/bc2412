@@ -97,9 +97,7 @@ public class demo_array {
         System.out.println(right);
 
         int[] arr7 = new int[]{9, -8, 109, 99, 98};
-        int max1 = 0;
         int count1 = 0;
-        int center1 = 0;
         for(int i = 0; i <= arr.length; i++){
             if (arr7[i] > arr7[i + 1]) {
                 count1 = arr7[i];
