@@ -49,5 +49,52 @@ public class demo_BigDecimal {
       BigDecimal bd18 = BigDecimal.valueOf(4.566);
       System.out.println(bd18.setScale(2, RoundingMode.DOWN));//4.56
       System.out.println(bd18.setScale(2, RoundingMode.UP));//4.57
+
+      //square
+      double length = 4.2;
+      BigDecimal length1 = BigDecimal.valueOf(length);
+      BigDecimal squArea = length1.multiply(length1);
+      System.out.println(squArea);
+
+      //math
+      double Pi = 3.14159;
+      double radius = 4.5;
+      double circleArea = BigDecimal.valueOf(radius)
+      .multiply(BigDecimal.valueOf(radius))
+      .multiply(BigDecimal.valueOf(Pi))
+      .doubleValue();
+      System.out.println(circleArea);
+
+      circleArea = BigDecimal.valueOf(Math.pow(2.0, radius))
+      .multiply(BigDecimal.valueOf(Math.PI))
+      .doubleValue();
+      System.out.println(circleArea);
+
+      int x = 8;
+      int y = 9;
+      int max = Integer.MIN_VALUE;
+      max = Math.max(x, max);//if (x = max),max = x
+      max = Math.max(y, max);//if (y = max),max = y
+      
+      int[] arr = new int[] { 10, 9, 3};
+      for(int i = 0; i < arr.length; i++){
+        max = Math.max(arr[i], max);
+      }
+
+      //math.min
+      System.out.println(Math.sqrt(9));//auto convert int to double
+      System.out.println(Math.sqrt(10));
+      System.out.println(Math.sqrt(-10));//NaN
+
+      //round() -> nearst to integer
+      System.out.println(Math.round(3.456));//3
+      System.out.println(Math.round(3.556));//4
+      double u = 3.456;
+      System.out.println(Math.round(u * 100) / 100.0);//3.46
+      double u2 = 3.556;
+      
+      System.out.println(Math.abs(-9L));//9
+
+      
     }
 }
