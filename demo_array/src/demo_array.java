@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 import java.util.Arrays;
 
 public class demo_array {
@@ -118,8 +119,60 @@ public class demo_array {
         //print (-8 + 109)
         //...
         //print (99 + 98)
-        for(int i = 0; i < arr8.length; i++){
+        for(int i = 0; i < arr8.length - 1; i++){
             System.out.println(arr8[i] + arr8[i + 1]);
         }
+
+        Integer[] arr9 = new Integer[]{9, 6, 4};
+        //products for all numbers
+        int count2 = 0;
+        for(int i = 0; i < arr9.length; i++){
+            count2 = arr9[i]++;
+        }
+        System.out.println(count2);
+
+        double[] prices = new double[]{8.2, 6.5, 10.5};
+        int[] quantities = new int[]{9, 8, 3};
+        //8.2*9+6.5*8+10.5*3
+        double plus = 0;
+        for(int i = 0; i < prices.length; i++){
+            plus += prices[i] * quantities[i];
+        }
+        System.out.println(plus);//157.3
+
+        String s = String.valueOf(123);
+        System.out.println(s);//123
+        s = String.valueOf(true);
+        System.out.println(s);//true
+
+        System.out.println(String.valueOf('a'));
+
+        Integer i1 = Integer.valueOf("123");//
+        System.out.println(i1);
+        //Integer i1 = Integer.valueOf("right");//java.lang.NumberFormatException
+
+        //hello -> h, e, l, l, o
+        char[] chArr = "hello".toCharArray();
+        System.out.println(Arrays.toString(chArr));
+        //hello -> olleh
+        char memory;
+        for(int i = 0; i < chArr.length / 2; i++){//0, 1
+            memory = chArr[i];
+            chArr[i] = chArr[chArr.length - 1 - i];
+            chArr[chArr.length - 1 - i] = memory;
+        }
+        String result = "";
+        for( int i = 0; i < chArr.length; i++){
+            result += chArr[i];
+        }
+        System.out.println(result);
+
+        //h -> 1, e -> f, i -> m, ...
+        //ifmmp
+        chArr = "hello".toCharArray();
+        for(int i = 0; i < chArr.length; i++){
+            chArr[i] += 1;//chArr[i] = (char) (chArr[i] + 1);
+        }
+        System.out.println(String.valueOf(chArr));
     }
 }
