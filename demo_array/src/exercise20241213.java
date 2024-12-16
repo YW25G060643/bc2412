@@ -30,7 +30,7 @@ public class exercise20241213 {
   int count2 = 0;
   for(int i = 0; i < str.length(); i++){
     if (str.charAt(i) == target) {
-      System.out.println(i);
+      System.out.println("The index of the last character of c is "+ i);
     }else if (str.charAt(i) != target) {
       count2++;
       if (count2 == str.length()) {

@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class demo_array {
     public static void main(String[] args){
         int x = 3;
@@ -62,7 +64,7 @@ public class demo_array {
         //find the max ASCII value in the array
         int max = 0;
         for(int i = 0; i < arr4.length; i++){
-            if (arr4[i] >= arr4[0] && arr4[i] >= arr4[1] && arr4[i] >= arr4[2]){
+            if (arr4[i] > max){
                 max = arr4[i];
             }
         }
@@ -72,10 +74,54 @@ public class demo_array {
         int[] arr5 = new int[]{9, -8, -99, 98};
         int min = 0;
         for(int i = 0; i < arr5.length; i++){
-            if (arr5[i] <= arr5[0] && arr5[i] <= arr5[1] && arr5[i] <= arr5[2] && arr5[i] <= arr5[3]){
+            if (arr5[i] < min ){
                 min = arr5[i];
             }
         }
         System.out.println(min);
+
+        int[] arr6 = new int[]{9, 8, 99, 98};
+        int sum = 0;
+        for(int i = 0; i < arr6.length; i++){
+            sum = sum + arr6[i];
+        }
+
+        //swap
+        int left = 9;
+        int right = 7;
+        int center = 0;
+        center = left;
+        left = right;
+        right = center;
+        System.out.println(left);
+        System.out.println(right);
+
+        int[] arr7 = new int[]{9, -8, 109, 99, 98};
+        int max1 = 0;
+        int count1 = 0;
+        int center1 = 0;
+        for(int i = 0; i <= arr.length; i++){
+            if (arr7[i] > arr7[i + 1]) {
+                count1 = arr7[i];
+                arr7[i] = arr7[i + 1];
+                arr7[i + 1] = count1;
+            }
+        }
+        for(int j = 0; j <= arr.length; j++){
+            if (arr7[j] > arr7[j + 1]) {
+                count1 = arr7[j];
+                arr7[j] = arr7[j + 1];
+                arr7[j + 1] = count1;
+        System.out.println(Arrays.toString(arr7));
+            }
+         }
+        int[] arr8 = new int[]{9, -8, 109, 99, 98};
+        //print (9 + -8)
+        //print (-8 + 109)
+        //...
+        //print (99 + 98)
+        for(int i = 0; i < arr8.length; i++){
+            System.out.println(arr8[i] + arr8[i + 1]);
+        }
     }
 }
