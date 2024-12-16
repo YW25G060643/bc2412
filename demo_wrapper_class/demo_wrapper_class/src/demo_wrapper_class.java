@@ -21,15 +21,37 @@ public class demo_wrapper_class {
 
         char c = 'd';
         Character c2 = c;
+        System.out.println(c2.compareTo(c));//0
+        Character c3 = 'c';
+        System.out.println(c3.compareTo(c));//-1
+        Character c4 = 'E';
+        System.out.println(c4.compareTo(c));//-31
+
+        int ascii0fA = 'A';
+        int ascii0fa = 'a';
+        System.out.println(ascii0fa - ascii0fA);//32
+        System.out.println('a' - 'A');//32 char - char ->int - int
+
         boolean b = true;
         Boolean b2 = b;
+        System.out.println(b2);
+        boolean b3 = b2;
+        System.out.println(b3);
+
         byte by = 2;
         Byte by2 = by;
+        System.out.println(by2);
+
         short s = 21;
         Short s2 = s;
+        System.out.println(s2);
+
         long l = 222222222;
         Long l2 = l;
+        System.out.println(l2);
+
         float f2 = 3.333333f;
         Float f3 = f2;
+        System.out.println(f3);
     }
 }
