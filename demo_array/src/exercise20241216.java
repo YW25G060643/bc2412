@@ -23,14 +23,20 @@ public class exercise20241216 {
     // Your program should be able to handle all the above test case.
     int max = 0;
     int secondMax = 0;
+    int count = 0;
     // code here ...
     for(int i = 0; i < nums.length; i++){
         if (nums[i] > max) {
           max = nums[i];
         }
     }
-    for(int i = 0; i <nums.length; i++){
-        if (nums[i] == max) {
+    for(int i = 0; i < nums.length; i++){
+        if (nums[i] == max){
+          count++;
+        }
+    }
+    for(int i = 0; i < nums.length; i++){
+        if (count > 1) {
           secondMax = max;
         }else if (nums[i] > secondMax && nums[i] < max) {
           secondMax = nums[i];
