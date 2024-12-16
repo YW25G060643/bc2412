@@ -49,6 +49,5 @@ public class demo_BigDecimal {
       BigDecimal bd18 = BigDecimal.valueOf(4.566);
       System.out.println(bd18.setScale(2, RoundingMode.DOWN));//4.56
       System.out.println(bd18.setScale(2, RoundingMode.UP));//4.57
-
     }
 }

@@ -18,6 +18,7 @@ public class demo_wrapper_class {
         //method == presentation
 
         double d3 = d2.doubleValue();//un-box
+        System.out.println(d3);
 
         char c = 'd';
         Character c2 = c;
