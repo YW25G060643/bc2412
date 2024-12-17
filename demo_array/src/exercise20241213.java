@@ -18,8 +18,8 @@ public class exercise20241213 {
         if (count == 10) {
           break;
         }
-       }
       }
+    }
     
      /**
    * Expected output:
@@ -28,13 +28,15 @@ public class exercise20241213 {
   String str = "coding bootcamp."; // You should not change this line
   char target = 'c'; // Update this target to test the logic
   int count2 = 0;
-  for(int i = 0; i < str.length(); i++){
+  for(int i = str.length() - 1; i < str.length(); i--){
     if (str.charAt(i) == target) {
       System.out.println("The index of the last character of c is "+ i);
+      break;
     }else if (str.charAt(i) != target) {
       count2++;
       if (count2 == str.length()) {
       System.out.println("Not Found");
+      break;
       }
     } 
   }

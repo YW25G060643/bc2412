@@ -190,5 +190,21 @@ public class demo_array {
         }
         maxNumChar =(char) maxNumInt;
         System.out.println(maxNumChar);//'p'
+
+        //another way
+        maxNumChar = ' ';
+        int[] counters = new int[26];
+        for(int i = 0; i < arr10.length; i++){
+            counters[arr10[i] - 'a']++;
+        }
+        int max2 = Integer.MIN_VALUE;
+        for(int i = 0; i < counters.length; i++){
+            //max2 = Math.max(counters[i]; max2);
+            if (counters[i] > max2) {
+                maxNumChar = (char) (i + 'a');
+                max2 = counters[i];
+            }
+        }
+        System.out.println(maxNumChar);
     }
 }
