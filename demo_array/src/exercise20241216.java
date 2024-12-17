@@ -27,19 +27,20 @@ public class exercise20241216 {
     // code here ...
     for(int i = 0; i < nums.length; i++){
         if (nums[i] > max) {
-          max = nums[i];
+          max = nums4[i];
         }
     }
     for(int i = 0; i < nums.length; i++){
-        if (nums[i] == max){
+        if (nums4[i] == max){
           count++;
         }
     }
     for(int i = 0; i < nums.length; i++){
         if (count > 1) {
           secondMax = max;
-        }else if (nums[i] > secondMax && nums[i] < max) {
-          secondMax = nums[i];
+          break;
+        }else if (nums4[i] > secondMax && nums4[i] < max) {
+          secondMax = nums4[i];
         }
     }
     System.out.println(secondMax);

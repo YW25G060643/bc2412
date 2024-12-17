@@ -7,3 +7,12 @@
 - System.out.println(bd3);//0.3
 - add(), subtract(), multiply(), divide(), sin(), etc.
 - BigDecimal varz = varx.divide(vary, BigDecimal.ROUND_DOWN); -> 
+### wrapper
+- Integer x2 = x;//auto-box
+
+- charactor & char compare
+- char c = 'd';
+- Character c2 = c;
+- System.out.println(c2.compareTo(c));//0
+
+- 
