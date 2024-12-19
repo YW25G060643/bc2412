@@ -206,5 +206,21 @@ public class demo_array {
             }
         }
         System.out.println(maxNumChar);
+
+        //
+        int[] arr12 = new int[]{20, -20, 90, 50, -40};
+        //sorting without create a new array
+        //move the max to tail
+        int temp = 0;
+        for(int i = 0; i < arr12.length - 1; i++){
+            for(int j = 0; j < arr12.length - i - 1; j++){
+                if (arr12[j] > arr12[j + 1]) {
+                    temp = arr12[j];
+                    arr12[j] = arr12[j + 1];
+                    arr12[j + 1] = temp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(arr12));
     }
 }
