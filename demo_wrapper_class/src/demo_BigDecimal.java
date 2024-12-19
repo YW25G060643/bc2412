@@ -94,7 +94,5 @@ public class demo_BigDecimal {
       double u2 = 3.556;
       
       System.out.println(Math.abs(-9L));//9
-
-      
     }
 }

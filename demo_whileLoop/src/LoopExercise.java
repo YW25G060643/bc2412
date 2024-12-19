@@ -198,6 +198,7 @@ public class LoopExercise {
     // 19. swap the max digit and min digit
     // Assumption: each digit value appear once in the String
     // Print: "49280"
+    String s19 = "40289";
 
     // 20. Find the longest String in the String array
     // Print "longest=programming"
