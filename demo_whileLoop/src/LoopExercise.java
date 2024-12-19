@@ -198,28 +198,6 @@ public class LoopExercise {
     // 19. swap the max digit and min digit
     // Assumption: each digit value appear once in the String
     // Print: "49280"
-    String s19 = "40289";
-    maxValue = 0;
-    int countMax = 0;
-    minValue = 0;
-    int countMin = 0;
-    for(int i = 0; i < s19.length(); i++){
-      if (s19.charAt(i) >= maxValue) {
-        maxValue = s19.charAt(i);
-        countMax++;
-      }else if (s19.charAt(i) <= minValue) {
-        minValue = s19.charAt(i);
-        countMin++;
-      }
-    }
-    System.out.println(countMax);
-    System.out.println(countMin);
-    char min = s19.charAt(countMin);
-    char max = s19.charAt(countMax);
-    s19.replace(min, max);
-    s19.replace(max, min);
-    System.out.println(s19);
-
 
     // 20. Find the longest String in the String array
     // Print "longest=programming"
