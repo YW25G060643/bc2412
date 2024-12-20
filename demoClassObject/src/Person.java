@@ -23,6 +23,8 @@ public class Person {//blueprint -> define a person
         return this.emailAddress;
     }
 
+    //setter
+    //void -> return type (return nothing)
     public void setAge(int age){
         this.age = age;
     }
