@@ -26,5 +26,20 @@ public class demo2DArray {
     //2nd row = 0, 0, 100
     int[][] arr2d2 = new int[][] {{100, 0, 0}, {0, 0, 100}};
     System.out.println(Arrays.deepToString(arr2d2));//[[100, 0, 0], [0, 0, 100]]
+
+    int[][] arr2d3 = new int[][] {{100, 7, 9}, {101, -9, 100}};
+    int rowLength = arr2d3[1].length;//3
+    //find the max value of each row, and then put it into a new array
+    int[] roMaxs = new int[arr2d3.length];
+    int max = Integer.MAX_VALUE;
+    int idx = 0;
+    for(int i = 0; i < arr2d3.length; i++){
+      max = Integer.MIN_VALUE;
+      for(int j = 0; i < arr2d3[i].length; j++){
+        max = Math.max(arr2d3[i][j], max);
+      }
+      roMaxs[idx++] = max;
+    }
+    System.out.println(Arrays.toString(roMaxs));
   }
 }
