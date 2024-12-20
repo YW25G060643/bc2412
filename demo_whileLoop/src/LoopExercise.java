@@ -173,11 +173,11 @@ public class LoopExercise {
     System.out.println(maxValue);
     System.out.println(minValue);
 
-    // 16. Declare a float value (arr16) array with value 0.2, 0.3, 0.5
-    float[] arr16 = new float[]{0.2F, 0.3F, 0.5F,};
+    // 16. Declare a float value (arr16) array with value 0.2, 0.3, 0.6
+    float[] arr16 = new float[]{0.2F, 0.3F, 0.6F,};
 
     // 17. Add value 0.1 to each of value in array arr16
-    // Print: [0.3, 0.4, 0.6]
+    // Print: [0.3, 0.4, 0.7]
     for(int i = 0; i < arr16.length; i++){
       arr16[i] = arr16[i] + 0.1F;
     }
@@ -199,6 +199,29 @@ public class LoopExercise {
     // Assumption: each digit value appear once in the String
     // Print: "49280"
     String s19 = "40289";
+    char[] arr19 = new char[s19.length()];
+    for(int i = 0; i < arr19.length; i++){
+      arr19[i] = s19.charAt(i);
+    }
+    maxValue = -1;
+    minValue = -1;
+    int min19 = Integer.MAX_VALUE;
+    int max19 = Integer.MIN_VALUE;
+    for(int i = 0; i < arr19.length; i++){
+      if (arr19[i] > max19) {
+        max19 = arr19[i];
+        maxValue = i;
+      }
+      if (arr19[i] < min19) {
+        min19 = arr19[i];
+        minValue = 1;
+      }
+    }
+    char temp19 = ' ';
+    temp19 = arr19[(int) maxValue];
+    arr19[(int) maxValue] = arr19[(int) minValue];
+    arr19[(int)minValue] = temp19;
+    System.out.println(Arrays.toString(arr19));
 
     // 20. Find the longest String in the String array
     // Print "longest=programming"
