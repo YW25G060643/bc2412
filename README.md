@@ -15,3 +15,15 @@
   - }
   - for + if(loop all elements + filtering)
     - searching for + if
+## week 2
+- while loop(for loop / while loop)
+- for-each loop(simple design of for loop)
+- arrays(support 17 types of value)
+- 8 wrapper class (8 primitives)
+- String methods
+- Methods (similar to Fomula)
+  - Input paraments
+  - Return types
+  - Method name
+  - Method signature = input params + method name
+- BigDecimal
