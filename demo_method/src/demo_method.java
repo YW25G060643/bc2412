@@ -56,10 +56,9 @@ public class demo_method {
     }
 
     public static void main(String[] args) {
-        int x = 3;
         int a = 10;
         int b = 11;
-        double y = 0;
+        double y = sum(a, b);
         System.out.println(y);//21
         a = 19;
         b = 21;
