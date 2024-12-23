@@ -15,5 +15,15 @@ public class Test {
       for(Person c : people){
           System.out.println(c.getName() + "," + c.getAge() + "," + c.getEmailAddress());
       }
+
+      //run time
+      //
+      Preson p4 = null;
+      //pi.getK -> conpile error -> Person class has no getK method
+
+      p4.getName();
+      //compile OK ->
+
+      
     }
 }
