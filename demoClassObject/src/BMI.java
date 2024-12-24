@@ -4,13 +4,30 @@ import java.math.RoundingMode;
 public class BMI {
     //weight / height^2
     private double weight;
-    private double height;
+    private double height;//instance
+    private char gender;
 
-    public BMI(double weight, double height){
+    //can be more than one constructor
+    public BMI(double weight, double height, char gender){
       this.weight = weight;
       this.height = height;
+      this.gender = gender;
     }
+
+    //empty constructor
+    public BMI(){
+
+    }
+
+    //constructor is same as method, not allow same constructor signature
     
+    public double getWeight(){
+      return this.weight;
+    }
+    public double getHeight(){
+      return this.height;
+    }
+
     //instance method
     public double getBmi(){
       return BigDecimal.valueOf(this.weight)
@@ -41,10 +58,20 @@ public class BMI {
       }
     }
 
+    public char genderInfo(){
+      return this.gender;
+    }
+
     public static void main(String[] args) {
-      BMI b1 = new BMI(60, 1.80);
+      BMI b1 = new BMI(60, 1.80, 'M');
       System.out.println(b1.getBmi());//18.52
       System.out.println(b1.bmiInfo());//normal weight
+      System.out.println(b1.genderInfo());
       System.out.println(b1.getBmi(60, 1.80));
+
+      //constract of an empty method
+      BMI b2 = new BMI();
+      System.out.println(b2.getWeight());
+      System.out.println(b2.getHeight());
     }
 }
