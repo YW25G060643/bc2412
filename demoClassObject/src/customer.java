@@ -36,5 +36,11 @@ public class customer {
     public static void main(String[] args){
         customer c1 = new customer(1L);
         c1.placeOrder(new order());
+
+        c1.getOrders()[0].getItems()[1].getPrice();
+        /*c1.getorders -> order
+         * so getOrders[0] -> order
+         * 
+        */
     }
 }
