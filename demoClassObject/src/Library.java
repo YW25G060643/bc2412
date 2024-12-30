@@ -5,24 +5,47 @@ public class Library {
       1)add a book, return void
       2)removeByTitle, return Book
       3)searchByTitle, return Book[]
+    librarian(add/remove), library(search), book
     */
-    private String attributes;
     private String title;
     private String author;
 
-    public Library(String attributes,  String title, String author){
-        this.attributes = attributes;
+    public Library( String title, String author){
         this.author = author;
         this.title = title;
     }
+
+    public String getAuthor(){
+        return this.author;
+    }
+
+    public String getTitle(){
+        return this.title;
+    }
     
-    private static Library[] libraries = new Library[101];
+    public static int[] libraries = new int[101];
+    public static final String[] TITLE = new String[101];
+    public static final String[] AUTHOR = new String[101];
 
-    public static addABook(){
-
+    public void addABook(){
+        for(int i = 0; i < libraries.length; i++){
+            if (libraries[i] != 1) {
+                libraries[i] = 1;
+                TITLE[i] = title;
+                AUTHOR[i] = author;
+            }
+        }
     } 
 
-    public static void main(String[] args) {
-        System.out.println(libraries);
+    public String removeByTitle(){
+        for(int i = 0; i < libraries.length; i++){
+            
+        }
+      return null;
+    }
+
+    public String searchByTitle(){
+
+      return null;
     }
 }
