@@ -14,6 +14,15 @@ public class Student2 {
     public candy2[] getCandies(){
         return this.candies;
     }
+    
+
+    Student[] students = {new Student(67), // 学生1 
+      new Student(89), // 学生2 
+      new Student(58), // 学生3 
+      new Student(99), // 学生4 
+      new Student(60), // 学生5 
+      new Student(59) // 学生6
+   };
 
     public void receiveCandy(candy2 candy){
         candy2[] candies = new candy2[this.candies.length + 1];
