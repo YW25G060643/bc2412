@@ -1,6 +1,6 @@
 public class Card {
-    private char rank;//A 2 ... 9 J Q K
-    private char suite;//'d' 'c' 'h' 's'
+    public static char rank;//A 2 ... 9 J Q K
+    public static char suite;//'d' 'c' 'h' 's'
 
     //constant
     public static final char[] ranks = new char[]{'A', '2', '3', '4', '5', '6', '7', '8', '9', 'J', 'Q', 'K'};

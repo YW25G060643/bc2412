@@ -13,6 +13,7 @@ public class Library {
     public Library( String title, String author){
         this.author = author;
         this.title = title;
+        this.books = new book[0];
     }
 
     public String getAuthor(){
@@ -31,15 +32,17 @@ public class Library {
         for(int i = 0; i < libraries.length; i++){
             if (libraries[i] != 1) {
                 libraries[i] = 1;
-                TITLE[i] = title;
-                AUTHOR[i] = author;
+                TITLE[i] = getTitle();
+                AUTHOR[i] = getAuthor();
             }
         }
     } 
 
     public String removeByTitle(){
         for(int i = 0; i < libraries.length; i++){
-            
+            if (TITLE[i].equals(getTitle())) {
+                
+            }
         }
       return null;
     }
@@ -47,5 +50,16 @@ public class Library {
     public String searchByTitle(){
 
       return null;
+    }
+
+    public static void main(String[] args) {
+        Library lb1 = new Library();
+        lb1.add(new Book("abc", "Tommy"));
+        lb1.add(new Book("def", "Jenny"));
+        lb1.add(new Book("ABCD", "Jimmy"));
+
+        for(book book : lb1.getBooks()){
+            System.out.println(book.getBookTitle() + " " + book.getBookAuthor());
+        }
     }
 }

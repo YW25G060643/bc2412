@@ -19,9 +19,9 @@ public class Student {
      */
 
      private int candies;
-     public Student(int score, int candies){
+     public Student(int score){
         this.score = score;
-        this.candies = candies;
+        this.candies = 0;
      }
      public int getScore(){
         return this.score;
@@ -30,8 +30,28 @@ public class Student {
         return this.candies;
      }
 
-
-     public static int candieCount(){
-        for(int i = 0; i )
+     public void distributeCandies(){
+         if (score >= 80) {
+               candies += 2;
+         }else if (score >= 60) {
+               candies++;
+         }else{
+               candies = 0;
+         }
      }
+     public static void main(String[] args){
+         Student[] students = {new Student(67), // 学生1 
+            new Student(89), // 学生2 
+            new Student(58), // 学生3 
+            new Student(99), // 学生4 
+            new Student(60), // 学生5 
+            new Student(59) // 学生6
+         };
+         int totalCandies = 20;
+
+         while (totalCandies > 0) {
+               for()
+         }
+     }
+
 }

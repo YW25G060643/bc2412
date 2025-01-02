@@ -7,7 +7,7 @@ public class Deck {
         int idx = 0;
         for(int i = 0; i < Card.ranks.length; i++){
             for(int j = 0; j < Card.suites.length; j++){
-                this.cards[idx++] = new Card(rank,suite);
+                this.cards[idx++] = new Card('A', 'D');
             }
         }
     }
