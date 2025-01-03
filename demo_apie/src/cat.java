@@ -19,9 +19,15 @@ public class cat extends Animal{
   public void walk(){
       System.out.println("walking...");
   }
+
+  @Override
+  public void eat(){
+      System.out.println("cat is eating...");
+  }
   public static void main(String[] args) {
       cat cat = new cat("null");
       System.out.println(cat.getName());
-      cat.walk();
+      cat.walk();//cat itself
+      cat.eat();//override parent method
   }
 }

@@ -7,4 +7,8 @@ public class Animal {
     public String getName(){
         return this.name;
     }
+
+    public void eat(){
+        System.out.println("eating...");
+    }
 }
