@@ -6,12 +6,17 @@ public abstract class shape {
    * 
    */
     private String color;
+    private double radius;
 
-    public shape(String color){
+    public shape(String color, double radius){
         this.color = color;
+        this.radius = radius;
     }
     public String getColor(){
         return this.color;
+    }
+    public double getRadius(){
+       return this.radius;
     }
 
     //implicitly public
