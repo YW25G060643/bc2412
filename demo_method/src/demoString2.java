@@ -37,7 +37,7 @@ public class demoString2 {
         System.out.println("aac".compareTo("azh"));//25
 
         //chain method
-        System.out.println("hello".concat("ijk").concat("def").toUpperCase());//helloijkdef
+        System.out.println("hello".concat("ijk").concat("def").toUpperCase());//HELLOIJKDEF
 
         //charAt() -> find char at index
         //indexOf() -> find index by char
